@@ -1,0 +1,85 @@
+#page-landing{
+    width: 100vw; /*ocupa toda a largura da tela */
+    height: 100vh; /*ocupa toda a altura da tela*/
+    background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
+
+    display: flex;
+    justify-content: center; /*eixo x*/
+    align-items: center; /*eixo y*/
+}
+
+#page-landing .content-wrapper{
+    position: relative;
+
+    width: 100%; /*ocupa toda a largura da tela*/
+    max-width: 1100px; /*para por aqui*/
+
+    height: 100%; /*ocupa toda a tela*/
+    max-height: 680px; /*para por aqui*/
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column; /*os elementos dentro da div estarão um em cima do outro*/
+    justify-content: space-between; /*era criar uma distancia entre os elementos*/
+
+    background: url('../../images/Criancas.svg') no-repeat 80% center /*link da imagem, sem repetir, x e y*/
+}
+
+#page-landing .content-wrapper main{
+    max-width: 350px;
+}
+
+#page-landing .content-wrapper main h1{
+    font-size: 76px;
+    font-weight: 900;
+    line-height: 70px;
+}
+
+#page-landing .content-wrapper main p{
+    margin-top: 40px; /*Distancia um pouco do titulo*/
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.content-wrapper .location{
+    position: absolute; /*estará se comportando sobre o tamento da content wrapper*/
+    right: 0;
+    top: 0;
+
+    font-size: 24px;
+    line-height: 34px;
+
+    display: flex;
+    flex-direction: column; /*membros dentro da div se comportam como colunas*/
+    text-align: right; /*elementos dentro da div são todos jogado para a direita*/
+}
+
+.content-wrapper .location strong{
+    font-weight: 900;
+}
+
+.content-wrapper .enter-app{
+    /*relação de posicionamento externo*/
+    position: absolute; /*estará se comportando sobre o tamento da content wrapper*/
+    right: 0; /*canto direito*/
+    bottom: 0; /*canto inferior*/
+
+    /*Aparencia da div*/
+    height: 80px; /*div com esse tamanho*/
+    width: 80px; /*div com essa largura*/
+    background: #ffd666; /*cor de fundo*/
+    border-radius: 30px; /*arredondamento das bordas*/
+
+    /*Relação dos conteudos internos da div*/
+    display: flex;
+    align-items: center; /*eixo y centralizado (todos os elementos colados nesse ponto)*/
+    justify-content: center; /*eixo x centralizado (todos os elementos colados nesse ponto)*/
+
+    /*Efeitos de transição*/
+    transition: background-color 0.2s; /*mudanças na propriedade background-color da div levaram 0.2s*/
+}
+
+/*açoes ao passar o mouse por cima da div*/
+.content-wrapper .enter-app:hover{
+    background: #96feff;
+}

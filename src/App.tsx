@@ -1,20 +1,11 @@
 import React from 'react';
+import './styles/global.css'
 
-interface TitleProps{
-  text: string
-}
-
-function Title(props: TitleProps){
-  return (
-    <h1>{props.text}</h1>
-  )
-}
+import Routes from './routes';
 
 function App() {
   return (
-    <div className="App">
-      <Title text="eae"/>
-    </div>
+    <Routes/>
   );
 }
 
